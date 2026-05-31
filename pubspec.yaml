@@ -1,0 +1,90 @@
+name: beforebaby_app
+description: AI-Powered Family Readiness Platform - Help couples become physically, emotionally, financially, psychologically, and relationally prepared for parenthood before conception.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.13.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # State Management (Riverpod - as per blueprint)
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  riverpod_generator: ^2.3.0
+
+  # HTTP & API
+  dio: ^5.3.0
+  retrofit: ^4.0.0
+
+  # Database & Storage
+  hive: ^2.2.0
+  hive_flutter: ^1.1.0
+
+  # UI Components
+  flutter_svg: ^2.0.0
+  cached_network_image: ^3.3.0
+
+  # Date & Time
+  intl: ^0.19.0
+
+  # Navigation
+  go_router: ^13.0.0
+
+  # Security
+  flutter_secure_storage: ^9.0.0
+  pointycastle: ^3.7.0
+
+  # Notifications
+  firebase_messaging: ^14.6.0
+  flutter_local_notifications: ^16.1.0
+
+  # Analytics
+  firebase_analytics: ^10.5.0
+
+  # Environment Configuration
+  flutter_dotenv: ^5.1.0
+
+  # Logging
+  logger: ^2.0.0
+
+  # Form Validation
+  form_builder_validators: ^9.1.0
+
+  # JSON Serialization
+  json_annotation: ^4.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.0
+  retrofit_generator: ^8.0.0
+  riverpod_generator: ^2.3.0
+  json_serializable: ^6.7.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - .env
+    - .env.example
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
